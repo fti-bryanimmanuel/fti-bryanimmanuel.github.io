@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../brsport/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+    <title>BR Sport - Bola News</title>
+</head>
+
+<body>
+<!-- Navbar header -->
+<div id = "background">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+                <img src="img/BR Logo.png" width="120" height="120" class="d-inline-block align-top"
+                alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navbar-info font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i data-feather="home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        <i data-feather="clipboard"></i>
+                        News <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html #transfer">
+                            <i data-feather="refresh-cw"></i>
+                            Transfers
+                        </a>
+                        <a class="dropdown-item" href="index.html #injuries">
+                            <i data-feather="activity"></i>
+                            Injuries
+                        </a>
+                        <a class="dropdown-item" href="index.html #score">
+                            <i data-feather="bar-chart-2"></i>
+                            Scoreboard
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="index.html #hotnews">
+                            <i data-feather="list"></i>
+                            View all News
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Highlight page.html">
+                        <i data-feather="film"></i>
+                        Highlights
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search BR Sport" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                    <i data-feather="search"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+</div>
+<!-- Navbar header -->
+
+<!--Bola-->
+<div id="bola">
+    <div class="container">
+        <h1 class="text-center mb-5">Football</h1>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <figure class="figure"></figure>
+                <img src="img/goldenboy.jpg" class="img-thumbnail float-left">
+                <figcaption class="figure-caption">Haaland celebrates with Sancho after a goal.</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 text-justify">
+                <h3 id="sancho">Sancho and Haaland lead the names on European Golden Boy 2020 final shortlist</h3>
+                <p>Jadon Sancho and Erling Haaland are among the names on the final shortlist for the 2020 European Golden Boy award.
+                    The final 20 nominations for the annual prize distributed by Italian newspaper Tuttosport have been confirmed, with the continent's best player under the age of 21 set to be revealed on December 14.
+                </p>
+                <p>Lionel Messi, Paul Pogba, Kylian Mbappe and Matthijs de Ligt have all won the award in the past, while last year's prize was given to Atletico Madrid's Joao Felix following his breakthrough season at Benfica.
+                    Sancho finished second in the 2019 voting while his Borussia Dortmund team-mate Haaland came in fourth after a prolific start to the 2019-20 campaign at Red Bull Salzburg, which ultimately earned him a move to Westfalenstadion in January.
+                </p>
+            </div>
+                <p>Both men are in contention to win the prize again this time around, with Sancho now reportedly valued at around €120 million (£108m/$140m) after another outstanding year in Germany while Haaland is attracting attention from Real Madrid after scoring 21 goals in his first 23 outings for BVB.
+                    Elsewhere, Barcelona teenager Ansu Fati and Bayern Munich full-back Alphonso Davies have both been nominated for the second time, while Rennes midfielder Eduardo Camavinga has also been included.
+                    Six players have been nominated from the Premier League in total, with Manchester City pair Phil Foden and Ferran Torres making the final cut along with Manchester United's Mason Greenwood, Wolves striker Fabio Silva, Chelsea winger Callum Hudson-Odoi and Arsenal starlet Bukayo Saka.
+                    Barcelona's new signing Sergino Dest has also been named in the final 20, having been rewarded for a bright start to his career at Ajax with a €21 million (£19m/$20m) move to Camp Nou.
+                    Vinicius Junior and Rodrygo are representing Real Madrid in the shortlist, while Juventus midfielder Dejan Kulusevski, Paris Saint-Germain defender Mitchel Bakker, Lille forward Jonathan David, Ajax prospect Ryan Gravenberch, Salzburg's Dominik Szoboszlai, and Milan playmaker Sandro Tonali complete the nominees.
+                    The final winner will be decided by a panel of 40 journalists from across Europe, with a new name set to be carved on the trophy as the next generation of talent continues to emerge.
+                </p>
+                <p>Golden Boy 2020 final nominees in full: Mitchel Bakker - PSG, Eduardo Camavinga - Rennes, Jonathan David - Lille, Alphonso Davies - Bayern Munich, 
+                    Sergino Dest - Barcelona, Fábio Silva  - Wolverhampton, Ansu Fati - Barcelona, Phil Foden - Manchester City, Ryan Gravenberch - Ajax, Mason Greenwood - Manchester United,
+                    Erling Haaland - Borussia Dortmund, Callum Hudson-Odoi - Chelsea, Dejan Kulusevski  - Juventus, Rodrygo - Real Madrid, Bukayo Saka  - Arsenal,
+                    Jason Sancho -  Borussia Dortmund, Dominik Szoboszlai - Red Bull Salzburg, Sandro Tonali  - Milan, Ferrán Torres  - Manchester City, Vinícius Junior - Real Madrid
+                </p>
+            <div class="col-md-6 text-justify">
+                <h3>All FC Bayern Champions League Goals 2019/20</h3>
+                <p>With the incredible statistic of 11 wins in 11 games and 43 scored goals, FC Bayern Munich really deserved to win the Champions League title in this season 2019/20.
+                    Enjoy watching all of them - including the Serge Gnabry show against Tottenham Hotspur and Olympique Lyon and the incredible assist of Alphonso Davies against Barcelona in the semi-final.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/PbLwkwgbhTw" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <figure class="figure"></figure>
+                <img src="img/ronaldo.jpg" class="img-thumbnail float-left">
+                <figcaption class="figure-caption">Cristiano Ronaldo playing for Portugal</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 text-justify">
+            <h3 id="ronaldo">Cristiano Ronaldo Tests Positive for COVID-19, Will Self-Isolate</h3>
+            <p>Portugal announced Tuesday that Juventus star Cristiano Ronaldo has tested positive for COVID-19.
+                On Oct. 3, Juventus announced two of its staff members had also tested positive. As a result, all those involved with the club had gone into self-isolation.
+            </p>
+            <p>Portugal had a pair of matches last week, drawing 0-0 with Spain in a friendly and earning the same score in Sunday's UEFA Nations League fixture with France. Ronaldo's positive test will rule him out of Wednesday's Nations League clash with Sweden.
+                Portugal said in Tuesday's statement (h/t ESPN) that no other players had a positive test. Upon the conclusion of the Sweden fixture, Portugal won't be in action again until Nov. 11.
+            </p>
+            </div>
+            <p>Under Italy's COVID-19 protocols, Ronaldo will have to isolate for 10 days. That will rule him out for Saturday's Serie A clash with Crotone and Juve's Champions League opener with Dynamo Kiev on Oct. 20.
+                He could be cleared to return Oct. 25 against Hellas Verona. The five-time Ballon d'Or winner might also be available when Juventus play Lionel Messi and Barcelona in the UEFA Champions League.
+            </p>
+            <p>Juventus have one win and one draw through their first two Serie A matches as they look to claim a 10th straight league title.
+                Juventus were scheduled to play Napoli on Oct. 4, but the latter cited local health recommendations and declined to make the trip to Allianz Stadium. Under league rules, Juve should be awarded a 3-0 victory, a result that isn't yet reflected in the Serie A table.
+            </p>
+            <div class="col-md-6 text-justify">
+                <h3>Barcelona expect Lionel Messi to complete Man City transfer next summer</h3>
+                <p>The Argentine came close to leaving Camp Nou this summer only to make a U-turn on his decision - but the Catalan giants are resigned to losing him to City at the end of this season
+                    Barcelona boss Ronald Koeman is resigned to losing Lionel Messi to Manchester City next year.
+                    Koeman has revealed how a heart-to-heart talk with the Argentine convinced him to focus himself on the Barca cause for one last season after Messi had made it clear he wanted to quit the Nou Camp to join Pep Guardiola at the Etihad.
+                </p>
+                <p>Barcelona's beleaguered president Josep Maria Bartomeu refused to accept the 33-year-old's claim that he could quit the club for free - and insisted that the £630million buy-out clause in his contract would have to be met in full for him to leave.
+                    But while Koeman has been delighted with Messi's response, he has already accepted that he will not get to work with the six-time Ballon d'Or winner beyond the current season.
+                </p>
+            </div>
+                <div class="col-md-6 text-center">
+                    <figure class="figure"></figure>
+                    <img src="img/messi.jpg" class="img-thumbnail float-left">
+                    <figcaption class="figure-caption">Lionel Messi celebrating after scoring a goal against Celta Vigo</figcaption>
+                    </figure>
+                </div>
+                <p>Koeman said: “I was always hoping Messi would stay for this season. If he had left in the summer, I would have had a very different situation at Barca.
+                    “He wanted to leave but the club was very clear to him. The buy out clause was so high, that not a single club in the world was going to pay that in these times.
+                </p>
+                <p>“I went to his house and took time to listen to all the things he said. But I also explained to him that I had not been a part of the problems he had with the club and told him how I was going to work to change things.
+                    “We ended up talking football tactics. It ended as a proper football chat and that convinced me he is a real lover of the game and he still wanted to put everything he has into Barcelona.”
+                </p>
+                <p>Koeman's confession that he is not counting on Messi beyond the current season is huge news for City as they look to secure Guardiola's future.
+                    The Catalan has been a close friend of the Dutchman since they were team-mates in the Barcelona team that lifted the club's first European Cup in 1992.
+                    Guardiola's contract expires at the end of the season after five years in Manchester.
+                    And it's unthinkable that Messi would agree to sign for the Blues without Guardiola signing a new deal.
+                    Koeman has been hugely impressed with the Argentine's attitude and form.
+                </p>
+                <p>He added: “It was more a question of how I was going to get Leo's mind in the right frame on and off the pitch.
+                    “I had to get him right as a person and as a player. When he came back in for training I could only see good signs. His attitude, his spirit - there was not a thing I could criticise him for.
+                </p>
+                <p>“He is still superb. The great thing with Messi is that when he sees a ball, he has fun. The way he sees things in a game is absolutely fantastic.
+                    "He is not only smart as a player, he also still executes every action with the ball with the highest perfection.”
+                </p>
+                <div class="col-md-6 mt-5">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/hnVQVpH1MXk" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    </div>   
+                </div>
+                <div class="col-md-6 mt-5 text-justify">
+                    <h3>EXTENDED HIGHLIGHTS: EVERTON 2-2 LIVERPOOL</h3>
+                    <p>Extended highlights from the 237th Merseyside derby, a game which had everything - goals, a red card, VAR controversy - except a winner. 
+                        Everton twice came from behind but perhaps should have taken all three points with a series of good chances with the game poised at 1-1. 
+                        Michael Keane and Dominic Calvert-Lewin cancelled out goals from Sadio Mane and Mo Salah, before Richarlison was sent off and Liverpool were denied a stoppage-time winner by VAR. 
+                    </p>
+                </div>
+            <div class="col-md-6 mt-5 text-justify">
+                <h3>Virgil van Dijk to undergo surgery on knee injury</h3>
+                <p>Liverpool FC can confirm Virgil van Dijk will undergo surgery on the knee injury he sustained during Saturday’s 2-2 draw at Everton.
+                    The centre-back damaged knee ligaments following an incident involving Blues goalkeeper Jordan Pickford after six minutes at Goodison Park.
+                    Van Dijk was required to be substituted and further assessment on the injury has revealed an operation will be needed.
+                    No specific timescale is being placed upon his return to action at this stage.
+                    Following surgery, Van Dijk will begin a rehabilitation programme with the club’s medical team to enable him to reach full fitness as soon as possible.
+                </p>
+                <p>Virgil van Dijk is focused on returning to fitness as quickly as possible after it was confirmed that the Liverpool centre-back requires knee surgery.
+                    The Reds' No.4 sustained a knee injury during the early stages of Saturday's 2-2 Merseyside derby draw at Goodison Park and further assessment revealed that an operation will be needed.
+                </p>
+            </div>
+            <div class="col-md-6 mt-5 text-center">
+                <figure class="figure"></figure>
+                <img src="img/virgil.jpg" class="img-thumbnail float-left">
+                <figcaption class="figure-caption">Jurgen Klopp consoling Virgil Van Dijk after taken off for injury</figcaption>
+                </figure>
+            </div>
+            <p>Van Dijk posted the following message on social media on Sunday evening:
+                This afternoon I met with a leading consultant to start the process of planning the finer details of my rehabilitation following the incident yesterday.
+                I’m now fully focused on my recovery and will do everything I can to be back as quickly as possible.
+                Despite the obvious disappointment, I’m a firm believer that within difficulty lies opportunity and with God’s help I’m going to make sure I return better, fitter and stronger than ever before.
+                In football, as in life, I believe everything happens for a reason and it’s important to try and keep level-headed whether going through the highs or the lows. With the support of my wife, kids, family and everyone at Liverpool, I’m ready for the challenge ahead.
+                I’d like to thank everyone for the messages of support, it’s meant a huge amount to me and my family, and I’ll now be doing everything possible to support my teammates in any way I can ahead of a big few weeks ahead as I take my own recovery day by day. I’ll be back.
+                Virgil van Dijk.
+                </p>
+            <p>Jürgen Klopp and Liverpool will do everything possible to support Virgil van Dijk throughout his rehabilitation period.
+                    The Reds’ No.4 requires surgery on the knee injury he sustained during Saturday’s Merseyside derby at Goodison Park and has stated in a post on social media that he is now focused fully on returning to fitness as soon as possible.
+                    Klopp, meanwhile, sees Monday as day one of Van Dijk’s recovery – a process he insists the centre-back will not face alone. 
+                    “That’s all not sorted yet,” the boss told Liverpoolfc.com, when asked when Van Dijk’s operation will take place.
+                    “A few things are clear, so he now will be out for a while, that’s clear. We don’t want to set any timeframe, to be honest, because each player is different and each individual is different and these possible timeframes are always for the x, y, z player [but] Virgil is Virgil and we don’t want to set any timeframe.
+                    “But he will be out for a pretty long time and that’s what the situation is. That’s what we know since… I expected it pretty much on Saturday after the game immediately, especially when I saw the challenge back. I saw it the first time only from the bench, and when I saw it back I was pretty clear that he will be out for a long time.
+                    “So we feel now in this moment extremely, extremely for him because most of us were in a similar situation and we know that these situations are absolutely rubbish. You don’t need it. You don’t need it but you have to get over it and Virgil will get over it, 100 per cent, and today is already the first day, if you want, of the recovery. 
+                    “We go already in the right direction and so that’s OK and the rest is football and life, like always a challenge, so see what you get and then make the best of it and that’s what we do now.”
+                </p>
+            <p>Klopp has, of course, been in touch with Van Dijk and reported that the Dutchman is feeling ‘OK’.
+                    The manager continued: “It’s always the same, players love to be rather on their own in the moment and to deal in the first moment with it. I am long enough in the business to know that. I was injured myself, I had exactly the same injury if I’m right and it’s not then that you are then pretty chatty. 
+                    “It all will start but we are in contact, of course, we are in contact. We are there for him, he knows that and we will wait for him like a good wife is waiting when the husband is in jail and will do, meanwhile, all what we can do to make it as easy for him as possible.”
+                </p>
+        </div>
+    </div>
+</div>
+<!-- Bola -->
+
+<!-- About -->
+<div id="about">
+    <div class="container footer">
+        <div class="row">
+        <div class="col-lg-6 col-md-6 ">
+            <h1><img src="../brsport/img/BR Logo.png" height="180px" width="180px"></h1>
+            <h2>About Us</h2>
+            <p>Welcome to BR Sports! We bring you the latest, most sizzling news from the sports world right to your screens. To inform and enlighten you is our primary motive so you can enjoy the beautiful world of competitive sports. Hut Hut!</p>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <h3>All News</h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <a href="Bola.html"><h5>Football</h5></a>
+                    <a href="Basket.html"><h5>NBA</h5></a>
+                    <a href="index.html #transfer"><h5>Transfer News</h5></a>
+                    <a href="index.html #home"><h5>Home</h5></a>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <a href="F1.html"><h5>F1</h5></a>
+                    <a href="Motogp.html"><h5>MotoGP</h5></a>
+                    <a href="index.html #injuries"><h5>Injuries</h5></a>
+                </div>
+            </div>
+            <h2 class="mt-5">Newsletter Subscription</h2>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-cotrol" placeholder="Your Email" value="Your Email">
+                <div class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Subribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About -->
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <h5 class="text-center">BR Sport © 2020</h5>
+    </div>
+</div>
+<!-- Footer -->
+
+    <script>feather.replace()</script>
+</body>
+
+</html>

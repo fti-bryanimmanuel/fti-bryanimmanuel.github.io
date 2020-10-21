@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../brsport/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+    <title>BR Sport - Basketball</title>
+</head>
+
+<body>
+<!-- Navbar header -->
+<div id = "background">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+                <img src="img/BR Logo.png" width="120" height="120" class="d-inline-block align-top"
+                alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navbar-info font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i data-feather="home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        <i data-feather="clipboard"></i>
+                        News <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html #transfer">
+                            <i data-feather="refresh-cw"></i>
+                            Transfers
+                        </a>
+                        <a class="dropdown-item" href="index.html #injuries">
+                            <i data-feather="activity"></i>
+                            Injuries
+                        </a>
+                        <a class="dropdown-item" href="index.html #score">
+                            <i data-feather="bar-chart-2"></i>
+                            Scoreboard
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="index.html #hotnews">
+                            <i data-feather="list"></i>
+                            View all News
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i data-feather="film"></i>
+                        Highlights
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search BR Sport" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                    <i data-feather="search"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+</div>
+<!-- Navbar header -->
+
+<!--basket-->
+<div id="basket">
+    <div class="container">
+        <h1 class="text-center mb-5">NBA</h1>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <figure class="figure"></figure>
+                <img src="img/lakers.jpg" class="img-thumbnail float-left">
+                <figcaption class="figure-caption">Lebron James celebrates with teammates.</figcaption>
+                </figure>
+            </div> 
+            <div class="col-md-6 text-justify">
+                <h3 id="lakers">The LA Lakers are 2020 NBA Champions!</h3>
+                <p>The Los Angeles Lakers are champions for the 17th time in franchise history. Los Angeles defeated the Miami Heat 106-93 in Sunday's Game 6 of the 2020 NBA Finals at Walt Disney World Resort, bouncing back from a Game 5 loss.
+                    LeBron James, Anthony Davis and Rajon Rondo spearheaded a balanced effort and defensive showcase in the blowout, helping the Lakers tie the Boston Celtics for the most championships in NBA history.
+                    Bam Adebayo led the way for Miami. While the Heat are surely not interested in moral victories, they still exceeded expectations this season and likely made an impression on potential free agents in reaching the Finals.
+                </p>
+                <p>LeBron knows better than anyone that 3-1 leads in the Finals aren't always safe. After all, he led the Cleveland Cavaliers back from that same deficit against the Golden State Warriors in 2016. He was dialed in from the start Sunday, like he had no interest in being on the other side of such a collapse.
+                    He picked up Jimmy Butler on the Lakers' first defensive possession, found teammates cutting to the hoop on the other end of the floor and went coast-to-coast for a dunk and acrobatic layup in the first quarter.
+                </p>
+                <p>Still, the story was James and Davis. This is what the Lakers had in mind when they traded promising young pieces Lonzo Ball, Josh Hart and Brandon Ingram to the New Orleans Pelicans to pair arguably the best big man in the game with one of the greatest players in history. Whether it was working in pick-and-rolls, suffocating the Miami attack or finding open teammates, the duo had everything working.
+                    The result was LeBron's fourth career ring, Davis' first and a blueprint for more.
+                </p>
+            </div>
+                <p>If it were possible to be in an ideal position trailing a series 3-2, the Heat seemed to find it coming into Sunday.
+                    Role players Duncan Robinson and Kendrick Nunn were excellent in Game 5, and Goran Dragic, who hadn't played since Game 1 because of a torn plantar fascia in his left foot, was active and played. There was also no reason for anything but confidence in Butler after he went toe-to-toe with LeBron in an epic Game 5 battle.
+                </p>
+                <p>The Los Angeles defense set the tone from the beginning, as James aggressively pushed up on Butler, the guards chased Miami's perimeter shooters away from open looks and Davis locked up Adebayo after starting at the 5 with Dwight Howard on the bench.
+                    It surely didn't help that the Heat continued to turn it over and miss free throws, but the versatile Lakers defense and smaller lineup around Davis' stifling interior presence was overpowering.
+                </p>
+                <p>That does nothing to take away from Miami's magical run through the Eastern Conference playoffs and into Game 6 of the Finals. Butler cemented his place as a superstar, the role players shined in key moments, and Erik Spoelstra provided some of the best coaching of his career.
+                    Perhaps this series would have been different if the Heat had remained healthy, but there was no question which side was better with a Lakers team that prides itself on its defense under Frank Vogel erasing all doubt on that end of the floor.
+                </p>
+            <div class="col-md-6 mt-5 text-justify">
+                <h3>The best highlights of the LA Lakers in the 2020 NBA Finals</h3>
+                <p>The LA Lakers successfully defeat the Miami Heat 4-2 to claim the title as the 
+                    world's best basketball team, lifting the Larry O'Brien trophy and silencing
+                    the doubters.
+                </p>
+                <p>In this video you'll see some of the best plays made by Lebron James and co as they
+                    make plays to fight through strong defence and win the title as champions.
+                </p>
+            </div>
+            <div class="col-md-6 mt-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/1QGyIGXJi8k" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5 text-center">
+                <figure class="figure"></figure>
+                <img src="img/lue.jpg" class="img-thumbnail float-left">
+                <figcaption class="figure-caption">Tyronn Lue speaking with Patrick Beverly.</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 mt-5 text-justify">
+                <h3 id="tyronn">Tyronn Lue Reportedly Finalizing 5-Year Contract with Clippers as New Head Coach</h3>
+                <p>Tyronn Lue is reportedly an NBA head coach once again. The Los Angeles Clippers are finalizing a five-year deal with Lue, who led the Cleveland Cavaliers to the 2016 championship, on Thursday, per ESPN's Adrian Wojnarowski.
+                    Brad Turner of the Los Angeles Times reported Clippers players are happy Lue was the choice as next head coach.
+                    Shamss Charania reported for The Athletic that Chauncey Billups will serve as lead assistant while Larry Drew also has a spot on the coaching staff.
+                    This comes after Wojnarowski and Tim MacMahon reported on Tuesday that the notion of Lue going to the Houston Rockets "gathered significant momentum after a meeting with Houston's ownership and management."
+                    The report noted Lue was still in the running for the Clippers job as well, which made sense considering he was an assistant coach for Los Angeles last season.
+                </p>
+                </div>
+                <div>
+                <p>Lue's name was included in coaching rumors before the season even ended, as Marc Stein of the New York Times reported in August that he and Los Angeles Lakers assistant coach Jason Kidd were the "prime candidates" to become the head coach of the New Orleans Pelicans after they fired Alvin Gentry.
+                    Charania of The Athletic and Stadium as well as Wojnarowski both reported Lue was on the short list of candidates for the Philadelphia 76ers after they fired Brett Brown.
+                    Joe Vardon of The Athletic also reported the Rockets could be interested if they elected not to bring back head coach Mike D'Antoni, who ultimately told the Rockets he would not return following the team's loss in the second round of the playoffs.
+                    Brad Turner of the Los Angeles Times reported Lue was a candidate for the Clippers' opening after they parted ways with Doc Rivers.
+                </p>
+                <p>What's more, Vincent Goodwill of Yahoo Sports reported in March that Brooklyn Nets point guard Kyrie Irving wanted Lue as the team's next head coach following the firing of Kenny Atkinson. Lue coached Irving with the Cavaliers during his only head coaching job until this hiring.
+                    The former point guard, who played 11 seasons for the Lakers, Washington Wizards, Orlando Magic, Rockets, Atlanta Hawks, Dallas Mavericks and Milwaukee Bucks, took over for the Cavaliers after they fired David Blatt during the 2015-16 campaign.
+                    All Lue did was lead Cleveland to its first and only championship in franchise history with LeBron James and Irving anchoring the on-court effort. Cleveland went back to the NBA Finals the following two seasons, only to lose to the same Golden State Warriors franchise it defeated in the 2016 Finals.
+                    James left for the Los Angeles Lakers the following offseason, and Lue was fired after the Cavaliers lost their first six games in the 2018-19 campaign.
+                    Still, he amassed an impressive 128-83 record during his tenure and will have a chance to bolster his mark with Los Angeles. Goodwill noted Lue was even in talks to become the Lakers head coach "before discussions broke down," and the job went to Frank Vogel.
+                </p>
+                <p>Lue brings a resume and experience working with some of the biggest stars the league has to offer to another high-profile job now that Los Angeles hired him.
+                    He is in charge of a team with plenty of talent in place with Kawhi Leonard and Paul George as the anchors. Still, the Clippers have been defined by a failure to reach the ultimate level having never even reached the Western Conference Finals.
+                    The 2019-20 campaign was the latest in the list of failures after they blew a 3-1 lead to the Denver Nuggets in the second round of the playoffs.
+                    It will be up to Lue to turn things around and contend for a championship, just like he did in Cleveland.
+                </p>
+                </div>
+                <div class="col-md-6 mt-5 text-justify">
+                    <h3 id="rose">Derrick Rose Deal to LA with Pistons 'Much More Likely Now'</h3>
+                    <p>The Los Angeles Lakers flirted with the idea of trading for Derrick Rose before February's deadline, but the talks could get more serious this offseason.
+                        One general manager told Sean Deveney of Heavy.com that the Lakers and Detroit Pistons may reopen negotiations:
+                    </p>
+                    <p>"I think both sides were reluctant when they went into in January, February. I don't think the Lakers wanted to make a major move because they thought they 
+                        could do something on the buyout market. And I don't think the Pistons wanted to make a major move because Derrick was happy there. You know, the Lakers wanted to be involved in case the Clippers got involved or someone else, the Bucks or the Nuggets, whoever. So there was interest but not too serious. Now, everything has shifted a little. Now, they're both in a position to where a deal is much more likely now."
+                    </p>
+                </div>
+                <div class="col-md-6 mt-5 text-center">
+                    <figure class="figure"></figure>
+                    <img src="img/rose.jpeg" class="img-thumbnail float-left">
+                    <figcaption class="figure-caption">Derrick Rose playing for the Detroit Pistons</figcaption>
+                    </figure>
+                </div>
+                    <p>Rose is coming off a stellar season as the Pistons' sixth man, averaging 18.1 points and 5.6 assists in what's amounted to a career renaissance. The 2011 NBA MVP was nearly out of basketball after a miserable experience with the Cleveland Cavaliers in 2017-18 before mounting a comeback with the Minnesota Timberwolves and Pistons the past two seasons.
+                        The Lakers could look at Rose as a replacement for Rajon Rondo, who is expected to opt out of his contract and become an unrestricted free agent. Rondo's playoff performance may take him out of the Lakers' limited price range, though they do have his limited Bird rights. The Lakers can offer Rondo a contract up to 105 percent of the NBA's average salary, but the deal must be at least two years without options.
+                    </p>
+                    <p>Rose carries a relative bargain contract at $7.7 million. An ideal trade for the Lakers may involve the team getting out from under Danny Green's $15 million salary for 2021-22, packaging a future draft pick and Green for Rose. The Pistons should have enough money under the cap to absorb Green without sending matching salaries in return.
+                        The Lakers will have limited ability to make moves beyond trades and the mid-level exception, so Rose may be a perfect addition to their repeat hopes.
+                    </p>
+                <div class="col-md-6 mt-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/YQ8WcqruMZI" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+                <div class="col-md-6 mt-5 text-justify">
+                    <h3>Jimmy Butler's Top Plays From NBA Restart!</h3>
+                    <p>As we all know, Jimmy Butler came out in the bubble like an MVP, defeating the coveted Milwaukee Bucks and taking
+                        the Miami Heat to 6 games in the NBA Finals against the Lebron-led LA Lakers. None can deny just how great Jimmy
+                        Butler's impact for this team.
+                    </p>
+                    <p>From a historic #NBAFinals debut to a booming coffee venture, Jimmy Butler did it ALL during NBA Restart! 
+                        Check out his best moments on the court from the Bubble and tell us your favorite in the comments below!
+                    </p>
+                </div>
+                <div class="col-md-6 mt-5 text-justify">
+                    <h3>How High Will 2020 NBA Draft's Most Popular Prospect Climb?</h3>
+                    <p>Obi Toppin sounds like the most popular prospect in the 2020 NBA draft. 
+                        He might not be No. 1, but practically every scout and executive Bleacher Report has spoken with has expressed confidence in his potential, fit and character. 
+                        Not every NBA evaluator loves LaMelo Ball, whose shooting and professionalism have been questioned by some around the league, even if they still have him at or near the top of their board. And not everyone trusts Anthony Edwards' style and impact or sees James Wiseman's upside or value in today's NBA.
+                        Sources tell B/R the Minnesota Timberwolves are high on Toppin. The question is whether they'd be willing to take him first overall or if they'd only draft the big man out of Dayton in a trade-down scenario.
+                    </p>
+                    <p>Teams are buying into Toppin's scoring carrying over based on his explosiveness, inside-out skill level and efficient volume production. And while they acknowledge the concerns about his defense, nobody seems too alarmed or ready to suggest they'll negate or neutralize his projected offensive output.
+                    </p>
+                </div>
+                <div class="col-md-6 mt-5 text-center">
+                    <figure class="figure"></figure>
+                    <img src="img/toppin.jpg" class="img-thumbnail float-left">
+                    <figcaption class="figure-caption">Obi Toppin of the University of Dayton </figcaption>
+                    </figure>
+                </div>
+                    <p>"Everything he does offensively translates," one scout told Bleacher Report. 
+                        "He has great touch with both hands, and his shooting looks like it could be replicated over and over," said one NBA executive. "A stretch 5 than can be a finisher is tough to ignore. He'll never be quick laterally, but he's capable."
+                    </p>
+                    <p>While teams may take needs and fit into account more this year (based on the perceived parity among prospects), there is a sense any team could take Toppin—including one he doesn't fit perfectly with like the Charlotte Hornets, Chicago Bulls, Cleveland Cavaliers or Atlanta Hawks—because of the stronger likelihood he receives a best-player-available nod over more divisive prospects.
+                        He still falls under the perceived "safe" category with Tyrese Haliburton, Isaac Okoro, Deni Avdija and Onyeka Okongwu. But teams see more upside tied to Toppin's vertical bounce, three-point shot, post game and passing. The perception is that he offers the most favorable ratio of risk and reward. 
+                    </p>
+                    <p>Multiple NBA front office members told B/R they feel they can mask Toppin's defensive weaknesses by playing him at center, where he won't guard as much around the perimeter and can still use his athleticism for shot-blocking at the rim. 
+                        Toppin's age (22) has also rarely come up as a deterrent. Teams sound persuaded by his offense, which is something the Timberwolves (No. 24 in offensive rating), Hawks (No. 25), Cavaliers (No. 26), Hornets (No. 28) and Bulls (No. 29) could obviously use. 
+                    </p>
+                    <p>Asking around the league, it seems highly unlikely Toppin will make it to the Detroit Pistons at No. 7. 
+                        Though I wouldn't write off the Timberwolves shocking the draft world by taking Toppin No. 1, the Nos. 2-6 range sounds most likely. 
+                        The Golden State Warriors are a wild card at No. 2 given the wide range of possibilities: taking Toppin for his NBA readiness, making a trade or filling a need with either Wiseman at center or one of the top-tier wings.
+                    </p>
+                    <p>Charlotte could be a legitimate landing spot for Toppin if Wiseman goes No. 2. The Hornets' leading scorer, Devonte' Graham, shot 38.2 percent from the field in 2019-20, and the team could use an efficient go-to option. 
+                        The Bulls offense has struggled running through Zach LaVine and Lauri Markkanen, and though there is still plenty of hope for oft-injured Wendell Carter Jr., he shouldn't stop Chicago from taking Toppin if the Bulls deem him the top talent on the board. 
+                    </p>
+                    <p>If the Cavaliers were only drafting to fill positional needs, they'd really limit their choices, which is something they can't afford to do. They don't have an untouchable long-term keeper on the roster. Though they aren't in win-now mode, general manager Koby Altman may even value Toppin's ability to produce faster results given how little progress the team has made under his watch the past few years. 
+                        The Hawks just traded for Clint Capela, but his stock has fallen recently, and injuries have limited his availability. He's also on a relatively tradable contract. They could go all-in with offense and pair John Collins with Toppin.
+                    </p>
+                    <p>And then there are teams looking to trade up.
+                        Scouts and agents have mentioned that the Pistons, New York Knicks, Phoenix Suns and Boston Celtics have expressed interest in moving up, though it's unclear who they'd target. The Suns and Celtics are motivated to win now and could view Toppin as an immediate contributor. He could also interest the Pistons and Knicks, organizations with blank-canvas rosters and possible motivation to add a sure thing. 
+                        Teams ultimately see a degree of certainty with Toppin, and it's being valued more during a draft loaded with uncertainty. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Basket -->
+
+<!-- About -->
+<div id="about">
+    <div class="container footer">
+        <div class="row">
+        <div class="col-lg-6 col-md-6 ">
+            <h1><img src="../brsport/img/BR Logo.png" height="180px" width="180px"></h1>
+            <h2>About Us</h2>
+            <p>Welcome to BR Sports! We bring you the latest, most sizzling news from the sports world right to your screens. To inform and enlighten you is our primary motive so you can enjoy the beautiful world of competitive sports. Hut Hut!</p>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <h3>All News</h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <a href="Bola.html"><h5>Football</h5></a>
+                    <a href="Basket.html"><h5>NBA</h5></a>
+                    <a href="index.html #transfer"><h5>Transfer News</h5></a>
+                    <a href="index.html #home"><h5>Home</h5></a>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <a href="F1.html"><h5>F1</h5></a>
+                    <a href="Motogp.html"><h5>MotoGP</h5></a>
+                    <a href="index.html #injuries"><h5>Injuries</h5></a>
+                </div>
+            </div>
+            <h2 class="mt-5">Newsletter Subscription</h2>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-cotrol" placeholder="Your Email" value="Your Email">
+                <div class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Subribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About -->
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <h5 class="text-center">BR Sport © 2020</h5>
+    </div>
+</div>
+<!-- Footer -->
+
+    <script>feather.replace()</script>
+</body>
+
+</html>
